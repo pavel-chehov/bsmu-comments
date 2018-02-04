@@ -1,0 +1,246 @@
+body{
+    font-family: verdana;
+    font-family: sans-serif;
+}
+
+ul{
+    padding-left: 0;
+}
+
+.devinder{
+    width: 100%;
+    border: 1px dashed #b0b0b0;
+}
+
+.clearfix:after {
+    content : ".";
+    visibility : hidden;
+    display : block;
+    height : 0;
+    clear : both;
+}
+
+.enter_btn, .ban_btn, .delete_btn, .green_btn, .gray_btn {
+    cursor: pointer;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    white-space: nowrap;
+    font-size: 14px;
+    -webkit-transition: all 0.2s ease-in-out 0s;
+    -webkit-backface-visibility: hidden
+    -moz-transition: all 0.2s ease-in-out 0s;
+    -o-transition: all 0.2s ease-in-out 0s;
+    transition: all 0.2s ease-in-out 0s;
+}
+
+.enter_btn, .green_btn{
+    color: #000;
+    background-color: #fff;
+    border: 1px solid #169420;
+}
+
+.ban_btn, .delete_btn, .green_btn, .gray_btn, .comment {
+    margin: 10px;
+}
+
+.enter_btn:hover, .green_btn:hover{
+    background-color: #169420;
+    color: #fff;
+}
+
+.ban_btn{
+    color: #000;
+    background-color: #fff;
+    border: 1px solid #E49918;
+}
+
+.ban_btn:hover{
+    background-color: #E49918;
+    color: #fff;
+}
+.delete_btn{
+    color: #000;
+    background-color: #fff;
+    border: 1px solid #D20707;
+    float: left;
+}
+
+.delete_btn:hover{
+    background-color: #D20707;
+    color: #fff;
+}
+
+.gray_btn{
+    width: 37px;
+    height: 37px;
+    color: #000;
+    background-color: #fff;
+    border: 1px solid #504545;
+    overflow: hidden;
+    max-width: 253px;
+    padding: 0 5px 0 0;
+    float: left;
+}
+
+.gray_btn:hover{
+    background-color: #fff;
+    width: 100%;
+    min-width: 277px;
+    height: auto;
+    padding: 14px 22px;
+}
+
+.gray_btn:hover .hoverHide{
+    display: none!important;
+}
+
+.hoverHide{
+    padding: 12px;
+    display: block!important;
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    -moz-margin-before: 0;
+    -moz-margin-after: 0;
+    -o-margin-before: 0;
+    -o-margin-after: 0;
+}
+
+.article {
+    padding: 10px;
+    max-width: 40%;
+    min-width: 250px;
+    border: 1px dashed #000;
+    border-radius: 10px;
+    margin: 10px 10px 20px 10px;
+    float: left;
+}
+
+h1,h2,h4,h5{
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    -webkit-margin-start: 0;
+    -webkit-margin-end: 0;
+    -moz-margin-before: 0;
+    -moz-margin-after: 0;
+    -moz-margin-start: 0;
+    -moz-margin-end: 0;
+    -o-margin-before: 0;
+    -o-margin-after: 0;
+    -o-margin-start: 0;
+    -o-margin-end: 0;
+}
+
+h2 span, h3 span{
+    margin: 0 10px;
+}  
+
+.block_center, .enter_btn {
+    display: block; 
+    margin: 16px auto 0 auto;
+}
+
+#list{
+    display: block; 
+    margin: 0 auto;
+}
+
+#list h3{
+    display: inline;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.comment{
+    max-width: 70%;
+    min-width: 300px;   
+}
+
+.ban_buttons{
+        list-style-type: none;
+        font-size: 14px;
+        float: left;
+}
+.ban_buttons i{
+    padding-right: 5px;
+}
+.gray_btn ul{
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    -webkit-padding-start: 0;
+    -moz-margin-before: 0;
+    -moz-margin-after: 0;
+    -moz-padding-start: 0;
+    -o-margin-before: 0;
+    -o-margin-after: 0;
+    -o-padding-start: 0;
+}
+
+.gray_btn h3{
+    padding: 5px;
+    display: block!important;
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    -moz-margin-before: 0;
+    -moz-margin-after: 0;
+    -o-margin-before: 0;
+    -o-margin-after: 0;
+}
+
+a.enter_btn{
+    display: inline-block;
+    margin: 10px 10px 24px 10px;
+}
+
+.articleTitle{
+    white-space: nowrap; /* Запрещаем перенос строк */
+    overflow: hidden; /* Обрезаем все, что не помещается в область */
+    text-overflow: ellipsis; /* Добавляем многоточие */
+    max-width: 70%;
+    min-width: 50%;
+}
+
+.mainInfo{
+    cursor: pointer;
+}
+
+.mainInfo:hover{
+    text-decoration: underline;
+}
+
+.visibleElement{
+
+    opacity: 1!important;
+}
+
+.enableElement{
+    display: block!important;
+}
+
+.additionalInfo{
+    display: none;
+    opacity: 0;
+}
+
+.appearAnimation{
+    animation-name: appear;
+    animation-duration: 1s;
+    opacity: 1;
+}
+
+.disappearAnimation{
+    animation-name: disappear;
+    animation-duration: 0.5s;
+    opacity: 0;
+
+}
+
+@keyframes appear {
+    from {opacity: 0;}
+    to {opacity: 1;}
+ }
+
+ @keyframes disappear {
+    from {opacity: 1;}
+    to {opacity: 0;}
+ }

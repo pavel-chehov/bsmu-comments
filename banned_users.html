@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Список заблокированных пользователей</title>
+    <link rel="stylesheet" href="../design/font_awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../design/admin_style.css">
+
+    <script type="text/javascript" src="http://www.bsmu.by/scripts/jquery.min.js"></script>
+    <script type="text/javascript" src="/comments/ajax_funcLib.js"></script>
+    <script type="text/javascript">insertNewData("", '../admin_get_banned_users.php', "list", "POST");</script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<h2><span><i class='fa fa-comments-o fa-lg'></i> Панель управления заблокированными пользователями</span></h2>
+<a class='enter_btn' href="articles.html"><i class='fa fa-arrow-left fa-lg'></i> Назад к списку статей</a>
+<div id="list"></div>
+</body>
+</html>

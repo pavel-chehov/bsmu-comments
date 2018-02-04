@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Список статей</title>
+    <link rel="stylesheet" href="../design/font_awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="../design/admin_style.css">
+
+	<script type="text/javascript" src="http://www.bsmu.by/scripts/jquery.min.js"></script>
+	<script type="text/javascript" src="/comments/ajax_funcLib.js"></script>
+	<script type="text/javascript" src="/comments/animations.js"></script>
+	<script type="text/javascript">insertNewData(null, '../admin_get_articles.php', "list", "POST")</script>
+</head>
+<body>
+	<h2><span><i class='fa fa-comments-o fa-lg'></i> Панель управления комментариями</span></h2>
+	<a class='enter_btn' href="banned_users.html"><i class='fa fa-users fa-lg'></i> К списку забаненных пользователей</a>
+	<div id="list"></div>
+</body>
+</html>
